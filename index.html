@@ -152,11 +152,18 @@
 
   .main-image {
     width: 100%;
-    max-width: 1600px;
+    max-width: none !important;
     display: block;
     margin: 100px auto 0 auto;
   }
-        }
+@media (max-width: 768px) {
+    .main-image {
+        width: 100% !important;
+        max-width: none !important;
+        display: block;
+        margin: 100px auto 0 auto;
+    }
+}
     </style>
 </head>
 
@@ -320,10 +327,8 @@
             chipContainer.appendChild(chip);
         }
     </script>
-    <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/timer.js"></script>
     <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/scripts.js"></script>
     <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/bbanmy.js"></script>
 </body>
-
 </html>
     
