@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         body {
-            background-color: #001f3f;
+            background-color: #001325;
             margin: 0;
             padding: 0;
         }
@@ -85,6 +85,7 @@
             background-image: url('https://i.imgur.com/YzC2Tb9.png');
             background-size: 100% 100%;
             animation: fall 15s linear infinite;
+            will-change: transform;
         }
 
         .roll {
@@ -114,10 +115,18 @@
                 width: 100%;
             }
 
-            .w3-content img {
-                max-width: 100%;
-            }
+.w3-content img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
+.w3-content img:first-child {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
             .wheeldiv img {
                 max-width: 100%;
             }
@@ -132,6 +141,21 @@
             .footer-info {
                 order: 99;
             }
+
+  .logo-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    z-index: 9999;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 1600px;
+    display: block;
+    margin: 100px auto 0 auto;
+  }
         }
     </style>
 </head>
@@ -142,40 +166,23 @@
         <source src="https://dailygametrends.com/my/unbeatable-desktop-cn/images/alert2.ogg" type="audio/ogg">
     </audio>
     <div class="wrapper">
-        <table class="main-split">
-            <td style="text-align: center;">
-                <div class="w3-content">
-                    <a href="https://dreamx45.com" target="_blank"><img class="mySlides" src="https://i.imgur.com/w5JTPMk.png" style="width:100%; max-width: 800px;"></a>
-                    <div class="w3-row-padding w3-section"></div>
+<table class="main-split">
+  <tr>
+    <td style="text-align: center;">
+      <div class="w3-content">
+        <a href="https://dreamx45.com" target="_blank">
+          <img src="https://i.imgur.com/k8IY9ED.png" alt="公司Logo" style="width: 300px; margin-bottom: 180px;">
+        </a>
+        <a href="https://dreamx45.com" target="_blank">
+          <img class="mySlides" src="https://i.imgur.com/AHNvUTd.png" alt="主視覺" />
+        </a>
+
+        <div class="w3-row-padding w3-section"></div>
                 </div>
-                <div class="scrolling-logos">
-                    <div class="logo-container" id="logoContainer">
-                        <img src="https://i.imgur.com/VWFNTzA.png" alt="" style="margin-right: 5px;">
-                        <img src="https://i.imgur.com/9PSUHwi.png" alt="" style="margin-right: 5px;">
-                    </div>
-                </div>
-                <br>
-                <div class="scrolling-logos1">
-                    <div class="logo-container1" id="logoContaine1r">
-                        <img src="https://i.imgur.com/UhBSLuR.png" alt="" style="margin-right: 5px;">
-                        <img src="https://i.imgur.com/B7qrGnE.png" alt="" style="margin-right: 5px;">
-                        <img src="https://i.imgur.com/f4ZVPrj.png" alt="" style="margin-right: 5px;">
-                        <img src="https://i.imgur.com/F5eHlFp.png" alt="" style="margin-right: 5px;">
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <p style="text-align:center;font-size:0.7em;color:grey;">
-                        DreamX 保留所有權利 © 2023-<span id="currentYear"></span><br>
-                        隱私政策 | 使用條款 | 責任博彩
-                    </p>
-                </div>
-                <script>
-                    document.getElementById("currentYear").textContent = new Date().getFullYear();
-                </script>
             </td>
             <td style="vertical-align: top;">
                 <div class="container">
-                    <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt="" style="width:100%; max-width: 300px;"></div>
+                    <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt="" style="width:100%; max-width: 800px;"></div>
                     <h2 class="everyday">
                         <font class="text-primary">領取 (3) 次免費機會</font><br>
                         <span>限時小遊戲: </span><span id="cdtimexx">0天 0小時 4分 57秒</span>
@@ -276,6 +283,30 @@
                 </div>
             </td>
         </table>
+        <div class="scrolling-logos">
+            <div class="logo-container" id="logoContainer">
+                <img src="https://i.imgur.com/VWFNTzA.png" alt="" style="margin-right: 5px;">
+                <img src="https://i.imgur.com/9PSUHwi.png" alt="" style="margin-right: 5px;">
+            </div>
+        </div>
+        <br>
+        <div class="scrolling-logos1">
+            <div class="logo-container1" id="logoContaine1r">
+                <img src="https://i.imgur.com/UhBSLuR.png" alt="" style="margin-right: 5px;">
+                <img src="https://i.imgur.com/B7qrGnE.png" alt="" style="margin-right: 5px;">
+                <img src="https://i.imgur.com/f4ZVPrj.png" alt="" style="margin-right: 5px;">
+                <img src="https://i.imgur.com/F5eHlFp.png" alt="" style="margin-right: 5px;">
+            </div>
+        </div>
+        <div class="footer-info">
+            <p style="text-align:center;font-size:0.9em;color:grey;">
+                DreamX 保留所有權利 © 2023-<span id="currentYear"></span><br>
+                隱私政策 | 使用條款 | 責任博彩
+            </p>
+        </div>
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
     </div>
     <script>
         const chipContainer = document.getElementById('chip-container');
