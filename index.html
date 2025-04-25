@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DreamX | 香港No.1信譽娛樂平台</title>
+    <link rel="stylesheet" type="text/css" href="https://dailygametrends.com/my/unbeatable-desktop-cn/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-color: #001325; 
+        }
+
+        .scrolling-logos {
+            display: block;
+            white-space: nowrap;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .logo-container {
+            display: inline-block;
+        }
+
+        .logo-container img {
+            filter: saturate(2.5);
+            width: auto; 
+            max-width: 100%;
+            height: auto;
+            max-height: 60px;
+        }
+
+        .scrolling-logos1 {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-container1 {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            margin: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                top: -100px;
+                transform: rotate(0deg);
+            }
+            100% {
+                top: 100vh;
+                transform: rotate(360deg);
+            }
+        }
+
+        .chip {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-image: url('https://i.imgur.com/YzC2Tb9.png');
+            background-size: 100% 100%;
+            animation: fall 15s linear infinite;
+        }
+
+        /* 
+        .roll {
+            background-color: #f0f0f5;
+            padding: 20px;
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+
+<body>
+   
+    <div id="chip-container"></div>
+
+    <audio autoplay="autoplay" preload="">
+        <source src="https://dailygametrends.com/my/unbeatable-desktop-cn/images/alert2.ogg" type="audio/ogg">
+    </audio>
+
+    <div class="wrapper">
+        <table class="main-split">
+            <td style="width:50%; text-align: center;">
+                <div class="w3-content">
+                    <a href="https://dreamx45.com" target="_blank"><img class="mySlides"
+                            src="https://i.imgur.com/w5JTPMk.png" style="width:100%; max-width: 800px;"></a>
+                    <div class="w3-row-padding w3-section"></div>
+                </div>
+
+                <div class="scrolling-logos">
+                    <div class="logo-container" id="logoContainer">
+                        <img src="https://i.imgur.com/VWFNTzA.png" alt="" style="margin-right: 5px;">
+                        <img src="https://i.imgur.com/9PSUHwi.png" alt="" style="margin-right: 5px;">
+                    </div>
+                </div>
+                <br>
+                <div class="scrolling-logos1">
+                    <div class="logo-container1" id="logoContaine1r">
+                        <img src="https://i.imgur.com/UhBSLuR.png" alt="" style="margin-right: 5px;">
+                        <img src="https://i.imgur.com/B7qrGnE.png" alt="" style="margin-right: 5px;">
+                        <img src="https://i.imgur.com/f4ZVPrj.png" alt="" style="margin-right: 5px;">
+                        <img src="https://i.imgur.com/F5eHlFp.png" alt="" style="margin-right: 5px;">
+                    </div>
+                </div>
+
+                <div>
+                    <p style="text-align:center;font-size:0.7em;color:grey;">
+                        DreamX 保留所有權利 © 2023-<span id="currentYear"></span><br>
+                        隱私政策 | 使用條款 | 責任博彩
+                    </p>
+                </div>
+
+                <script>
+                    document.getElementById("currentYear").textContent = new Date().getFullYear();
+                </script>
+            </td>
+
+            <td style="width:50%;vertical-align: top;">
+                <div class="container">
+                    <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt=""
+                            style="width:100%; max-width: 300px;"></div>
+                    <h2 class="everyday">
+                        <font class="text-primary">領取 (3) 次免費機會</font><br>
+                        <span>限時小遊戲: </span><span id="cdtimexx">0天 0小時 4分 57秒</span>
+                    </h2>
+
+                    <div class="roll">
+                        <span class="arrow"></span>
+                        <div class="miss" style="display: none;">
+                            <p class="received">抱歉, 沒抽中...</p>
+                            <p class="receivedbot">你還有 (<span id="numleft"></span>) 次機會</p>
+                        </div>
+                        <div class="info">
+                            <div class="blink" style="display: block;">
+                                <p class="received">免費3次轉動輪盤的機會！</p>
+                                <p class="receivedbot">試試你的運氣，贏取150%歡迎紅利或更多獎勵!</p>
+                            </div>
+                        </div>
+
+                        <strong>
+                            <div class="wheeldiv">
+                                <img class="wheel" src="https://i.imgur.com/KPIChen.png"
+                                    style="width:100%; max-width: 400px;">
+                            </div>
+                            <div class="WebCallDragWidget" id="WebCall">
+                                <div class="pulse_holder">
+                                    <div class="pulse_rays"></div>
+                                    <div class="pulse_rays1"></div>
+                                    <button id="spin">轉動輪盤</button>
+                                </div>
+                            </div>
+                            <button id="stop" style="display: none;">停止</button>
+                            <button id="spin2" style="display: none;">轉動輪盤</button>
+                            <button id="stop2" style="display: none;">停止</button>
+                            <button id="spin3" style="display: none;">轉動輪盤</button>
+                            <button id="stop3" style="display: none;">停止</button>
+                        </strong>
+                    </div>
+                    <strong>
+                        <div class="question" style="display: none;">
+                            <div class="topques">
+                                <p class="received">🎉 恭喜!</p>
+                                <p class="receivedbot">差一點就抽中了!</p>
+                            </div>
+                            <p class="threeq">回答3個簡單問題:</p>
+                            <div id="q1">
+                                <div class="boxin">
+                                    <p class="questnum">1</p>
+                                    <p class="quest">你是否超過18歲呢?</p>
+                                </div>
+                                <button class="yesno">是</button>
+                                <button class="yesno">否</button>
+                            </div>
+                            <div id="q2" style="display: none;">
+                                <div class="boxin">
+                                    <p class="questnum">2</p>
+                                    <p class="quest">你是香港公民嗎? </p>
+                                </div>
+                                <button class="yesno">是的</button>
+                                <button class="yesno">不是</button>
+                            </div>
+                            <div id="q3" style="display: none;">
+                                <div class="boxin">
+                                    <p class="questnum">3</p>
+                                    <p class="quest">準備領取免費紅利了嗎？</p>
+                                </div>
+                                <button class="yesno">準備好了！</button>
+                                <button class="yesno">還沒</button>
+                            </div>
+                            <div class="loading" style="display: none;">
+                                <p class="analyzing">正在審核你的答案, 請稍等...</p>
+                                <div class="bar">
+                                    <div class="active"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="finaldiv" style="display: none;">
+                            <div class="finalinfo">
+                                <div class="blinkfinal">
+                                    <p class="received">🎉 恭喜您！抽中了今天的優惠！</p>
+                                    <p class="receivedbot">領取你的獎勵:</p>
+                                </div>
+                            </div>
+
+                            <div class="cta clearfix">
+                                <p style="margin-bottom:1rem">馬上開啟新帳號!<br/> <span
+                                        style="font-size:0.9em">領取你的《150%歡迎紅利》高達 1500HKD或更多獎勵</span></p>
+                                <p class="text-white"><span class="aval"></span>還剩下 (2) 名額</p><br>
+
+                                <span style="font-size:11px; color:#fff">*此優惠獎截止於
+                                    <script language="Javascript">
+                                        var dayNames = new Array("星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+                                        var monthNames = new Array("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+                                        var now = new Date();
+                                        now.setDate(now.getDate() + 1);
+                                        document.write(monthNames[now.getMonth()] + "  " + (now.getDate()) + "日, " + now.getFullYear());
+                                    </script>
+                                </span><br />
+                            </div>
+                            <div class="button3">
+                                <a href="https://dreamx45.com" class="claim" target="_blank">&gt;&gt; 領取你的《150%歡迎紅利》&lt;&lt;</a>
+                            </div>
+                        </div>
+                    </strong>
+                </div>
+            </td>
+        </table>
+    </div>
+
+    <script>
+        // 
+        const chipContainer = document.getElementById('chip-container');
+        const chipCount = 5; 
+
+        for (let i = 0; i < chipCount; i++) {
+            const chip = document.createElement('div');
+            chip.classList.add('chip');
+            chip.style.left = Math.random() * 100 + 'vw';
+            chip.style.animationDuration = Math.random() * 10 + 10 + 's';
+            chip.style.animationDelay = Math.random() * 5 + 's';
+            chipContainer.appendChild(chip);
+        }
+    </script>
+
+    <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/timer.js"></script>
+    <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/scripts.js"></script>
+    <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/bbanmy.js"></script>
+</body>
+
+</html>
+    
