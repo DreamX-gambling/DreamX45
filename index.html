@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="https://dailygametrends.com/my/unbeatable-desktop-cn/css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <style>
         body {
             background-color: #001f3f;
@@ -130,7 +129,7 @@
 
             .scrolling-logos,
             .scrolling-logos1,
-            footer {
+            .footer-info {
                 order: 99;
             }
         }
@@ -139,20 +138,16 @@
 
 <body>
     <div id="chip-container"></div>
-
     <audio autoplay="autoplay" preload="">
         <source src="https://dailygametrends.com/my/unbeatable-desktop-cn/images/alert2.ogg" type="audio/ogg">
     </audio>
-
     <div class="wrapper">
         <table class="main-split">
             <td style="text-align: center;">
                 <div class="w3-content">
-                    <a href="https://dreamx45.com" target="_blank"><img class="mySlides"
-                            src="https://i.imgur.com/w5JTPMk.png" style="width:100%; max-width: 800px;"></a>
+                    <a href="https://dreamx45.com" target="_blank"><img class="mySlides" src="https://i.imgur.com/w5JTPMk.png" style="width:100%; max-width: 800px;"></a>
                     <div class="w3-row-padding w3-section"></div>
                 </div>
-
                 <div class="scrolling-logos">
                     <div class="logo-container" id="logoContainer">
                         <img src="https://i.imgur.com/VWFNTzA.png" alt="" style="margin-right: 5px;">
@@ -168,28 +163,23 @@
                         <img src="https://i.imgur.com/F5eHlFp.png" alt="" style="margin-right: 5px;">
                     </div>
                 </div>
-
-                <div>
+                <div class="footer-info">
                     <p style="text-align:center;font-size:0.7em;color:grey;">
                         DreamX 保留所有權利 © 2023-<span id="currentYear"></span><br>
                         隱私政策 | 使用條款 | 責任博彩
                     </p>
                 </div>
-
                 <script>
                     document.getElementById("currentYear").textContent = new Date().getFullYear();
                 </script>
             </td>
-
             <td style="vertical-align: top;">
                 <div class="container">
-                    <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt=""
-                            style="width:100%; max-width: 300px;"></div>
+                    <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt="" style="width:100%; max-width: 300px;"></div>
                     <h2 class="everyday">
                         <font class="text-primary">領取 (3) 次免費機會</font><br>
                         <span>限時小遊戲: </span><span id="cdtimexx">0天 0小時 4分 57秒</span>
                     </h2>
-
                     <div class="roll">
                         <span class="arrow"></span>
                         <div class="miss" style="display: none;">
@@ -202,11 +192,9 @@
                                 <p class="receivedbot">試試你的運氣，贏取150%歡迎紅利或更多獎勵!</p>
                             </div>
                         </div>
-
                         <strong>
                             <div class="wheeldiv">
-                                <img class="wheel" src="https://i.imgur.com/KPIChen.png"
-                                    style="width:100%; max-width: 400px;">
+                                <img class="wheel" src="https://i.imgur.com/KPIChen.png" style="width:100%; max-width: 400px;">
                             </div>
                             <div class="WebCallDragWidget" id="WebCall">
                                 <div class="pulse_holder">
@@ -267,12 +255,9 @@
                                     <p class="receivedbot">領取你的獎勵:</p>
                                 </div>
                             </div>
-
                             <div class="cta clearfix">
-                                <p style="margin-bottom:1rem">馬上開啟新帳號!<br/> <span
-                                        style="font-size:0.9em">領取你的《150%歡迎紅利》高達 1500HKD或更多獎勵</span></p>
+                                <p style="margin-bottom:1rem">馬上開啟新帳號!<br/> <span style="font-size:0.9em">領取你的《150%歡迎紅利》高達 1500HKD或更多獎勵</span></p>
                                 <p class="text-white"><span class="aval"></span>還剩下 (2) 名額</p><br>
-
                                 <span style="font-size:11px; color:#fff">*此優惠獎截止於
                                     <script>
                                         var dayNames = new Array("星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
@@ -292,11 +277,9 @@
             </td>
         </table>
     </div>
-
     <script>
         const chipContainer = document.getElementById('chip-container');
         const chipCount = 5;
-
         for (let i = 0; i < chipCount; i++) {
             const chip = document.createElement('div');
             chip.classList.add('chip');
@@ -306,7 +289,6 @@
             chipContainer.appendChild(chip);
         }
     </script>
-
     <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/timer.js"></script>
     <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/scripts.js"></script>
     <script src="https://dailygametrends.com/my/unbeatable-desktop-cn/js/bbanmy.js"></script>
