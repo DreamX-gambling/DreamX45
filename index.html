@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="https://dailygametrends.com/my/unbeatable-desktop-cn/images/favicon.png">
     <title>DreamX | 香港No.1信譽娛樂平台</title>
     <link rel="stylesheet" type="text/css" href="https://dailygametrends.com/my/unbeatable-desktop-cn/css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -13,7 +14,9 @@
 
     <style>
         body {
-            background-color: #001325; 
+            background-color: #001f3f;
+            margin: 0;
+            padding: 0;
         }
 
         .scrolling-logos {
@@ -30,7 +33,7 @@
 
         .logo-container img {
             filter: saturate(2.5);
-            width: auto; 
+            width: auto;
             max-width: 100%;
             height: auto;
             max-height: 60px;
@@ -65,6 +68,7 @@
             }
         }
 
+     
         @keyframes fall {
             0% {
                 top: -100px;
@@ -85,83 +89,43 @@
             animation: fall 15s linear infinite;
         }
 
-        /* 
+       
         .roll {
             background-color: #f0f0f5;
             padding: 20px;
-            border-radius: 10px; 
+            border-radius: 10px;
         }
-@media screen and (max-width: 768px) {
-    .wrapper .main-split {
-        display: block;
-        width: 100%;
-    }
 
-    .main-split > td {
-        display: block;
-        width: 100% !important;
-        text-align: center !important;
-    }
+       
+       .main-split {
+            display: table;
+            width: 100%;
+        }
 
-    .toplogo img,
-    .wheeldiv img,
-    .mySlides,
-    .cta p,
-    .button3 a {
-        max-width: 90% !important;
-        height: auto;
-    }
+       .main-split td {
+            width: 50%;
+            vertical-align: top;
+        }
 
-    .scrolling-logos img,
-    .scrolling-logos1 img {
-        max-height: 50px;
-    }
+       
+        @media (max-width: 768px) {
+           .main-split {
+                display: block;
+            }
 
-    .everyday {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
+           .main-split td {
+                display: block;
+                width: 100%;
+            }
 
-    .question .boxin p.quest {
-        font-size: 1rem;
-    }
+           .w3-content img {
+                max-width: 100%;
+            }
 
-    .claim {
-        font-size: 1rem;
-        padding: 10px 15px;
-        display: inline-block;
-    }
-@media (max-width: 768px) {
-    .main-split {
-        display: block;
-        width: 100%;
-    }
-
-    .main-split > td {
-        display: block;
-        width: 100% !important;
-    }
-
-    .main-split > td:first-child {
-        order: 1;
-    }
-
-    .main-split > td:last-child {
-        order: 2;
-    }
-
-    .scrolling-logos, .scrolling-logos1 {
-        order: 3;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .main-split + div {
-        order: 4;
-        text-align: center;
-    }
-}
-
+           .wheeldiv img {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -175,7 +139,7 @@
 
     <div class="wrapper">
         <table class="main-split">
-            <td style="width:50%; text-align: center;">
+            <td style="text-align: center;">
                 <div class="w3-content">
                     <a href="https://dreamx45.com" target="_blank"><img class="mySlides"
                             src="https://i.imgur.com/w5JTPMk.png" style="width:100%; max-width: 800px;"></a>
@@ -210,7 +174,7 @@
                 </script>
             </td>
 
-            <td style="width:50%;vertical-align: top;">
+            <td style="vertical-align: top;">
                 <div class="container">
                     <div class="toplogo"><img src="https://i.imgur.com/kjjbvUq.png" alt=""
                             style="width:100%; max-width: 300px;"></div>
@@ -323,9 +287,9 @@
     </div>
 
     <script>
-        // 
+        
         const chipContainer = document.getElementById('chip-container');
-        const chipCount = 5; 
+        const chipCount = 5;
 
         for (let i = 0; i < chipCount; i++) {
             const chip = document.createElement('div');
