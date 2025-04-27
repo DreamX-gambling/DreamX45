@@ -106,7 +106,7 @@ body {
   min-height: 18px;
   line-height: 18px;
   font-size: .9em;
-  background-image: url(./images/like.png);
+  background-image: url(../images/like.png);
   background-repeat: no-repeat
 }
 
@@ -125,7 +125,7 @@ body {
   position: relative;
   text-align: center;
   padding-bottom: 35px;
-  background: url(./images/main_bg.png) no-repeat center top;
+  background: url(../images/main_bg.png) no-repeat center top;
   background-size: 100%;
   /* padding: 0 30px 35px 30px; */
 }
@@ -133,7 +133,7 @@ body {
 .arrow {
   z-index: 6;
   display: block;
-  background-image: url(./images/arrow2.png);
+  background-image: url(../images/arrow2.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 45px;
@@ -153,7 +153,7 @@ body {
   width: 100%;
   padding: 12px 0px;
   text-align: center;
-  /* background: url(./images/info_bkg.png) no-repeat center center;
+  /* background: url(../images/info_bkg.png) no-repeat center center;
   background-size: 100% 100%; */
   line-height: normal;
   border-radius: 15px;
@@ -179,7 +179,7 @@ body {
 .wheeldiv {
   overflow: hidden;
   position: relative;
-  background: url(./images/wheel_bkg.png) no-repeat center 70% ;
+  background: url(../images/wheel_bkg.png) no-repeat center 70% ;
   background-size:95%;
   padding-top:70px;
   padding-bottom: 0px;
@@ -554,7 +554,7 @@ textarea {
   margin-top: 3px;
   background-color: #eeeff4;
   padding: 5px 5px 5px 23px;
-  background-image: url(./images/like.png);
+  background-image: url(../images/like.png);
   background-repeat: no-repeat;
   background-position: 5px center
 }
@@ -581,7 +581,7 @@ textarea {
   margin-top: 3px;
   background-color: #eeeff4;
   padding: 5px 5px 5px 23px;
-  background-image: url(./images/fbarrow.png);
+  background-image: url(../images/fbarrow.png);
   background-position: 5px center;
   background-repeat: no-repeat
 }
@@ -697,7 +697,7 @@ textarea {
   background: -moz-linear-gradient(#65ab53, #578843);
   background: linear-gradient(#65ab53, #578843);
   text-align: center;
-  color: #ffff;
+  color: #fff;
   font-size: 20px;
   font-weight: 700;
   padding: 10px;
@@ -1052,3 +1052,4 @@ a.claim {
     max-height: 600px;
     max-width: 600px;
 }
+
